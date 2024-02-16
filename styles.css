@@ -1,0 +1,164 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('./vecteezy_silhueta-do-empresario-no-topo-da-montanha-sobre-o-fundo-do_5205623.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  nav {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    background-color: #45a049;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    color: #555;
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #777;
+    font-size: 20px;
+  }
+  
+  #todo-app {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    padding: 30px;
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  .task input[type="checkbox"] {
+    margin-right: 15px;
+  }
+  
+  .task input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .task-text {
+    flex-grow: 1;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  #task-input {
+    width: 80%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    color: #555;
+    font-size: 18px;
+  }
+  
+  #add-task-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 15px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
+  }
+  
+  #add-task-btn:hover {
+    background-color: #45a049;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
